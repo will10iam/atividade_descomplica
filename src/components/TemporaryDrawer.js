@@ -33,7 +33,7 @@ export default function TemporaryDrawer() {
         ))}
       </List>
       <Divider />
-      <List>
+      {/* <List>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
@@ -44,13 +44,13 @@ export default function TemporaryDrawer() {
             </ListItemButton>
           </ListItem>
         ))}
-      </List>
+      </List> */}
     </Box>
   );
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)}>Menu</Button>
+      <Button color="primary" onClick={toggleDrawer(true)}>Opções</Button>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>
